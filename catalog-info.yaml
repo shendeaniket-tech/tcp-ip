@@ -1,0 +1,13 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: tcp-ip
+  description: A demo TCP/IP service for Backstage catalog
+  tags:
+    - java
+    - tcp
+    - networking
+spec:
+  type: service
+  lifecycle: experimental
+  owner: user:guest

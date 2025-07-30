@@ -2,14 +2,25 @@ apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
   name: tcp-ip
-  description: A TCP/IP server-client Spring Boot project
+  description: TCP/IP communication microservice in Spring Boot
+  tags:
+    - spring-boot
+    - java
+    - backend
   annotations:
     github.com/project-slug: shendeaniket-tech/tcp-ip
+    backstage.io/techdocs-ref: dir:.
+    github.com/workflows: build.yml
   links:
     - url: https://github.com/shendeaniket-tech/tcp-ip
-      title: View Source on GitHub
+      title: GitHub Source
       icon: github
+    - url: https://mycompany.dashboard.com/tcp-ip
+      title: Prod Monitoring
+      icon: dashboard
 spec:
   type: service
   lifecycle: experimental
-  owner: aniket
+  owner: user:aniket
+  system: messaging
+  domain: communication

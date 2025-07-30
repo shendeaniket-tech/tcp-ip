@@ -9,9 +9,6 @@ metadata:
     - url: https://github.com/shendeaniket-tech/tcp-ip
       title: View Source on GitHub
       icon: github
-    - url: https://shendeaniket-tech.github.io/tcp-ip
-      title: Project Homepage
-      icon: docs
 spec:
   type: service
   lifecycle: experimental

@@ -2,12 +2,17 @@ apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
   name: tcp-ip
-  description: A demo TCP/IP service for Backstage catalog
-  tags:
-    - java
-    - tcp
-    - networking
+  description: A TCP/IP server-client Spring Boot project
+  annotations:
+    github.com/project-slug: shendeaniket-tech/tcp-ip
+  links:
+    - url: https://github.com/shendeaniket-tech/tcp-ip
+      title: View Source on GitHub
+      icon: github
+    - url: https://shendeaniket-tech.github.io/tcp-ip
+      title: Project Homepage
+      icon: docs
 spec:
   type: service
   lifecycle: experimental
-  owner: user:guest
+  owner: aniket

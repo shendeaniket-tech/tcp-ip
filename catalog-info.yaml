@@ -10,7 +10,6 @@ metadata:
   annotations:
     github.com/project-slug: shendeaniket-tech/tcp-ip
     backstage.io/techdocs-ref: dir:.
-    github.com/workflows: build.yml
   links:
     - url: https://github.com/shendeaniket-tech/tcp-ip
       title: GitHub Source

@@ -9,6 +9,7 @@ metadata:
     - backend
   annotations:
     github.com/project-slug: shendeaniket-tech/tcp-ip
+    github.com/actions-workflow: springboot-ci.yml 
     backstage.io/techdocs-ref: dir:.
   links:
     - url: https://github.com/shendeaniket-tech/tcp-ip

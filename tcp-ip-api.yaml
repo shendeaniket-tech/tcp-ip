@@ -1,0 +1,11 @@
+apiVersion: backstage.io/v1alpha1
+kind: API
+metadata:
+  name: tcp-ip-api
+  description: API for sending messages via TCP/IP microservice
+spec:
+  type: openapi
+  lifecycle: experimental
+  owner: user:aniket
+  definition:
+    $text: ./openapi.yaml

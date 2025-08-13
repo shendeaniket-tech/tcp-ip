@@ -24,3 +24,5 @@ spec:
   owner: user:aniket
   system: messaging
   domain: communication
+  providesApis:
+    - tcp-ip-api

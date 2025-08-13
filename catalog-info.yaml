@@ -9,7 +9,7 @@ metadata:
     - backend
   annotations:
     github.com/project-slug: shendeaniket-tech/tcp-ip
-    github.com/actions-workflow: springboot-ci.yml@main 
+    github.com/actions-workflow: springboot-ci.yml@main
     backstage.io/techdocs-ref: dir:.
   links:
     - url: https://github.com/shendeaniket-tech/tcp-ip
@@ -26,3 +26,43 @@ spec:
   domain: communication
   providesApis:
     - tcp-ip-api
+
+---
+
+apiVersion: backstage.io/v1alpha1
+kind: API
+metadata:
+  name: tcp-ip-api
+  description: API for sending messages via TCP/IP microservice
+  tags:
+    - tcp
+    - spring-boot
+    - reactive
+spec:
+  type: openapi
+  lifecycle: experimental
+  owner: user:aniket
+  definition:
+    $text: |
+      openapi: 3.0.0
+      info:
+        title: TCP/IP Client API
+        version: 1.0.0
+      paths:
+        /api/send:
+          post:
+            summary: Send a TCP message
+            parameters:
+              - in: query
+                name: msg
+                required: true
+                schema:
+                  type: string
+              - in: query
+                name: clientName
+                required: true
+                schema:
+                  type: string
+            responses:
+              '200':
+                description: Successful send and response

@@ -1,0 +1,33 @@
+openapi: 3.0.0
+info:
+  title: TCP/IP Client API
+  version: 1.0.0
+  description: API for sending messages over TCP/IP to configured clients.
+paths:
+  /api/send:
+    post:
+      summary: Send message to TCP server
+      parameters:
+        - name: msg
+          in: query
+          required: true
+          schema:
+            type: string
+          description: The message to send.
+        - name: clientName
+          in: query
+          required: true
+          schema:
+            type: string
+          description: Name of the TCP client configuration to use.
+      responses:
+        '200':
+          description: Message sent successfully.
+          content:
+            application/json:
+              schema:
+                type: string
+        '400':
+          description: Invalid client name or request.
+servers:
+  - url: http://localhost:8080

@@ -21,7 +21,7 @@ metadata:
 spec:
   type: service
   lifecycle: experimental
-  owner: user:default/aniket
+  owner: user:development/guest
   system: default/messaging
   domain: default/communication
   providesApis:
@@ -35,7 +35,7 @@ metadata:
 spec:
   type: openapi
   lifecycle: experimental
-  owner: user:default/aniket
+  owner: user:development/guest
   definition: |
     openapi: 3.0.0
     info:
